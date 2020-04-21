@@ -1,4 +1,10 @@
-# Notes app
+# Django Notes App
+
+This is a simple notes application built in the Django framework for Python. It was created as an assignment for Momentum Learning's Immersive Full Stack Development Course. 
+
+The instructions for the assignment are listed below:
+
+## Notes app
 
 This project is your first Django project! It is intentionally simple. By the end of it, you will have created an application that can store, search, and filter notes.
 
