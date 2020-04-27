@@ -9,8 +9,19 @@ body {
     margin-left: 1rem;
 }
 
+.note-list {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: gray;
+}
+
 .note-body {
     display: inline-block;
+    margin-left: 20%;
 }
 
 .note {

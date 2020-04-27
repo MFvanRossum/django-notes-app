@@ -8,6 +8,14 @@
     {% block title %}<title>Notes</title>{% endblock %}
 </head>
 <body>
+    <div class="note-list">
+       {% for note in notes %}
+       <div class="note" id="{{note.pk}}">
+        <a class="note-title" href="{% url 'notes-detail' note.pk %}">{{note.title}}</a>
+        <p>Last updated: {{note.updated_at}}</p>
+       </div>
+       {% endfor %} 
+    </div>
     {% block content %} {% endblock %}
 </body>
 </html>
