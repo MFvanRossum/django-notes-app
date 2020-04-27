@@ -9,6 +9,10 @@
 </head>
 <body>
     <div class="note-list">
+        <h1>MY NOTES</h1>
+        <div id="page-header" class="page-header">
+            <a href="{% url 'note-new' %}" class="top-menu">Post New Note</a>
+        </div>
        {% for note in notes %}
        <div class="note" id="{{note.pk}}">
         <a class="note-title" href="{% url 'notes-detail' note.pk %}">{{note.title}}</a>
@@ -16,6 +20,8 @@
        </div>
        {% endfor %} 
     </div>
-    {% block content %} {% endblock %}
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
 </body>
 </html>

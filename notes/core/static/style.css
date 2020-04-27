@@ -19,9 +19,13 @@ body {
     background-color: gray;
 }
 
+.content {
+    margin-left: 20%;
+}
+
 .note-body {
     display: inline-block;
-    margin-left: 20%;
+    margin-left: 15%;
 }
 
 .note {
