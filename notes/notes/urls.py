@@ -19,10 +19,9 @@ from django.urls import path
 from core import views
 
 urlpatterns = [
-    path('', views.notes_list, name = 'notes-list'),
     path('notes/<int:pk>/', views.notes_detail, name = 'notes-detail'),
     path('admin/', admin.site.urls),
-    path('note/new/', views.note_new, name = 'note-new'),
+    path('', views.note_new, name = 'note-new'),
     path('note/<int:pk>/edit/', views.note_edit, name = 'post-edit'),
     path('note/<int:pk>/delete/', views.note_delete, name = 'post-delete'),
 ]
