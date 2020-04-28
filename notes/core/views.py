@@ -1,6 +1,6 @@
 from django.shortcuts import redirect, get_object_or_404
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from .models import Note
 from .forms import NoteForm
 
@@ -15,7 +15,7 @@ def note_new(request):
         form = NoteForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('notes-list')
+            return redirect('note-new')
     else:
         form = NoteForm()
     return render(request, 'core/post_edit.html', {'notes': notes, 'form': form})
@@ -27,7 +27,7 @@ def note_edit(request, pk):
         form = NoteForm(request.POST, instance=note)
         if form.is_valid():
             form.save()
-            return redirect('notes-list')
+            return redirect('note-new')
     else:
         form = NoteForm(instance=note)
     return render(request, 'core/post_edit.html', {'notes': notes, 'form': form})
@@ -35,4 +35,4 @@ def note_edit(request, pk):
 def note_delete(request, pk):
     note = get_object_or_404(Note, pk=pk)
     note.delete()
-    return redirect('notes-list')
+    return redirect('note-new')
