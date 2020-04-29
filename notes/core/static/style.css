@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Manrope';
     margin-left: 1rem;
 }
 
@@ -17,6 +17,8 @@ body {
     top: 0;
     left: 0;
     background-color: gray;
+    contain: content;
+    padding-left: 5px;
 }
 
 .content {
