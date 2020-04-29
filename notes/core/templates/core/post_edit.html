@@ -8,12 +8,12 @@
     {{ form.non_field_errors }}
     <div class="form-title">
         {{ form.title.errors }}
-        <label for="{{ form.title.id_for_label }}">Title:</label>
+        <label for="{{ form.title.id_for_label }}" class="title-label">Title:</label>
         {{ form.title }}
     </div>
     <div class="form-body">
         {{ form.body.errors }}
-        <label for="{{ form.title.id_for_label }}">Body:</label>
+        <label for="{{ form.title.id_for_label }}" class="body-label">Body:</label>
         {{ form.body }}
     </div>
     <button type="submit" class="save-btn">Save</button>
