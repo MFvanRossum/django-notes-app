@@ -4,7 +4,18 @@
 <h2>New Note</h2>
 <form method="POST" class="note-form">
     {% csrf_token %}
-    {{ form.as_p }}
+    <!-- {{ form.as_p }} -->
+    {{ form.non_field_errors }}
+    <div class="form-title">
+        {{ form.title.errors }}
+        <label for="{{ form.title.id_for_label }}">Title:</label>
+        {{ form.title }}
+    </div>
+    <div class="form-body">
+        {{ form.body.errors }}
+        <label for="{{ form.title.id_for_label }}">Body:</label>
+        {{ form.body }}
+    </div>
     <button type="submit" class="save-btn">Save</button>
 </form>
 {% endblock %}

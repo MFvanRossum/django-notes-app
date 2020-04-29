@@ -79,5 +79,10 @@ body {
 }
 
 .note-form {
-    font-size: 25px;
+    font-size: 15px;
+}
+
+.form-body {
+    width: 50%;
+    margin: 1rem;
 }
