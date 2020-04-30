@@ -132,4 +132,9 @@ body {
 .save-btn {
     margin: 1rem;
     font-size: 15px;
+    padding: 2px;
+    border-radius: 5px;
+    font-style: italic;
+    width: 50px;
+    background-color: #EFFFFA;
 }
