@@ -7,6 +7,7 @@
 body {
     font-family: 'Manrope';
     margin-left: 1rem;
+    background-color: #E5ECF4;
 }
 
 .note-list {
@@ -16,7 +17,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: gray;
+    background-color: #C3BEF7;
     contain: content;
     padding-left: 5px;
 }
@@ -100,6 +101,9 @@ body {
 #id_title {
     margin-top: 20px;
     width: 300px;
+    font-family: 'Manrope';
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .form-body {
@@ -120,6 +124,9 @@ body {
     width: 50%;
     height: 100%;
     margin-top: 20px;
+    font-family: 'Manrope';
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .save-btn {
