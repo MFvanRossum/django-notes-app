@@ -11,13 +11,13 @@
 <body>
     <div class="note-list">
         <h1>MY NOTES</h1>
-        <div id="page-header" class="page-header">
+        <div id="page-header" class="new-bttn">
             <a href="{% url 'note-new' %}" class="top-menu">Post New Note</a>
         </div>
        {% for note in notes %}
        <div class="note" id="{{note.pk}}">
         <a class="note-title" href="{% url 'notes-detail' note.pk %}">{{note.title}}</a>
-        <p>Last updated: {{note.updated_at}}</p>
+        <p class="list-time">Last updated: {{note.updated_at}}</p>
        </div>
        {% endfor %} 
     </div>

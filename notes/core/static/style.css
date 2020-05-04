@@ -44,6 +44,13 @@ a {
 
 .note:hover {
     background: linear-gradient(rgb(195, 190, 247),rgb(170, 166, 219));
+    height: 75px;
+    font-weight: bold;
+}
+
+.list-time {
+    font-size: 12px;
+    font-style: italic;
 }
 
 .note-title {
@@ -56,12 +63,22 @@ a {
     margin: 3px;
 }
 
-.page-header {
+.new-bttn {
     font-size: 15px;
     font-style: italic;
     font-weight: bold;
     margin: 0.5rem;
     text-decoration: none;
+    background-color: #8A4FFF;
+    width: max-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.new-bttn:hover {
+    box-shadow: 1px 1px 5px 1px;
+    border: 0.5px solid black;
+    background: linear-gradient(rgb(138, 79, 255), rgb(118, 68, 219));
 }
 
 .note-container {
