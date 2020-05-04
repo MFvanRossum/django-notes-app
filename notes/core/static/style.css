@@ -10,6 +10,11 @@ body {
     background-color: #E5ECF4;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .note-list {
     height: 100%;
     width: 20%;
@@ -35,6 +40,10 @@ body {
 .note {
     padding: 5px;
     border-bottom: 1px solid black;
+}
+
+.note:hover {
+    background: linear-gradient(rgb(195, 190, 247),rgb(170, 166, 219));
 }
 
 .note-title {
@@ -137,4 +146,8 @@ body {
     font-style: italic;
     width: 50px;
     background: linear-gradient( rgb(226, 248, 241), rgb(192, 212, 206));
+}
+
+.save-btn:hover {
+    box-shadow: 2px 2px 4px 1px;
 }
