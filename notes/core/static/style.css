@@ -48,6 +48,10 @@ a {
     font-weight: bold;
 }
 
+.note-title:hover {
+    color: white;
+}
+
 .list-time {
     font-size: 12px;
     font-style: italic;
