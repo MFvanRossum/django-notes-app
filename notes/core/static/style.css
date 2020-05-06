@@ -61,9 +61,10 @@ a {
     font-size: 12px;
     font-style: italic;
     margin: 3px;
-    border: 1px solid black;
+    padding: 5px;
     position: fixed;
     bottom: 10px;
+    height: max-content;
 }
 
 .new-bttn {
@@ -90,7 +91,6 @@ a {
     padding: 1rem;
     width: max-content;
     height: 100%;
-    border: 1px solid black;
 }
 
 .detail-title {
@@ -102,6 +102,18 @@ a {
     margin: 0.5rem;
     font-size: 18px;
     font-style: italic;
+}
+
+.edit, .delete {
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #8A4FFF;
+    padding: 2px;
+}
+
+.edit:hover, .delete:hover {
+    background: linear-gradient(rgb(138, 79, 255), rgb(118, 68, 219));
+    border: 0.5px solid black;
 }
 
 .note-form {

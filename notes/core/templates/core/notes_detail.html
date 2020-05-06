@@ -7,8 +7,8 @@
     <div class="timestamp">
         <p>Created: {{note.created_at}}</p>
         <p>Last updated: {{note.updated_at}}</p>
-        <a class="edit" href="{% url 'post-edit' pk=note.pk %}">Edit Note</a>
-        <a class="delete" href="{% url 'post-delete' pk=note.pk %}">Delete</a>
+        <a class="edit" href="{% url 'post-edit' pk=note.pk %}"><i class="far fa-edit"></i> Edit Note</a>
+        <a class="delete" href="{% url 'post-delete' pk=note.pk %}"><i class="far fa-trash-alt"></i> Delete</a>
     </div>
 </div>
 {% endblock %}

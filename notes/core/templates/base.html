@@ -6,13 +6,14 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'style.css' %}" />
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a902152cf6.js" crossorigin="anonymous" defer></script>
     {% block title %}<title>Notes</title>{% endblock %}
 </head>
 <body>
     <div class="note-list">
         <h1>MY NOTES</h1>
         <div id="page-header" class="new-bttn">
-            <a href="{% url 'note-new' %}" class="top-menu">Post New Note</a>
+            <a href="{% url 'note-new' %}" class="top-menu"><i class="far fa-edit"></i> Post New Note</a>
         </div>
        {% for note in notes %}
        <div class="note" id="{{note.pk}}">
