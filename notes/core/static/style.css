@@ -32,11 +32,6 @@ a {
     margin-left: 20%;
 }
 
-.note-body {
-    display: inline-block;
-    /* margin-left: 20%; */
-}
-
 .note {
     padding: 5px;
     border-bottom: 1px solid black;
@@ -63,8 +58,12 @@ a {
 }
 
 .timestamp {
-    font-size: 10px;
+    font-size: 12px;
+    font-style: italic;
     margin: 3px;
+    border: 1px solid black;
+    position: fixed;
+    bottom: 10px;
 }
 
 .new-bttn {
@@ -90,8 +89,8 @@ a {
     left: 25%;
     padding: 1rem;
     width: max-content;
+    height: 100%;
     border: 1px solid black;
-    border-radius: 10px;
 }
 
 .detail-title {
@@ -103,11 +102,6 @@ a {
     margin: 0.5rem;
     font-size: 18px;
     font-style: italic;
-}
-
-.edit {
-    margin-top: 1rem;
-    font-size: 10px;
 }
 
 .note-form {

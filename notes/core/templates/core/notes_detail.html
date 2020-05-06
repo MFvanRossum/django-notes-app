@@ -1,15 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
-<body class="note-body">
 <div class="note-container">
-<h2 class="detail-title">{{note.title}}</h2>
-<p class="detail-content">{{note.body}}</p>
-<div class="timestamp">
-<p>{{note.created_at}}</p>
-<p>{{note.updated_at}}</p>
-<a class="edit" href="{% url 'post-edit' pk=note.pk %}">Edit Note</a>
-<a class="delete" href="{% url 'post-delete' pk=note.pk %}">Delete</a>
+    <h2 class="detail-title">{{note.title}}</h2>
+    <hr>
+    <p class="detail-content">{{note.body}}</p>
+    <div class="timestamp">
+        <p>Created: {{note.created_at}}</p>
+        <p>Last updated: {{note.updated_at}}</p>
+        <a class="edit" href="{% url 'post-edit' pk=note.pk %}">Edit Note</a>
+        <a class="delete" href="{% url 'post-delete' pk=note.pk %}">Delete</a>
+    </div>
 </div>
-</div>
-</body>
 {% endblock %}
